@@ -1,5 +1,6 @@
 :root {
-    --bluecolor: rgb(21, 21, 49);
+    --backgroundcolor: rgb(21, 21, 49);
+    --fadecolor: rgb(12, 12, 12);
   }
 
 *{
@@ -17,13 +18,19 @@ p ,li{
 
 .title{
     text-align: center;
+    background-image: linear-gradient(var(--fadecolor) 60%, var(--backgroundcolor));
+    padding-bottom: 0px;
+    position: relative;
+}
+
+.title #textbox{
+    margin: 0px 400px 0px 400px;
+    background-color: white;
     font-size: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
-    color: #ffffff;
-    background-image: linear-gradient(black 60%, var(--bluecolor));
-    padding-bottom: 10px;
-    position: relative;
+    color: black;
+    border-radius: 45px;
 }
 
 body{
@@ -34,7 +41,7 @@ body{
 } 
 
 .Container{
-    background-color: var(--bluecolor); 
+    background-color: var(--backgroundcolor); 
 }
 
 .Main{
@@ -47,7 +54,7 @@ body{
 
 .Description{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bluecolor);
+    background-color: var(--backgroundcolor);
     padding: 20px;
     color:black;
     padding-bottom: 50px;
@@ -121,7 +128,7 @@ body{
 #Footer{
     text-align: center;
     color:grey;
-    background-image: linear-gradient(var(--bluecolor), black);
+    background-image: linear-gradient(var(--backgroundcolor), var(--fadecolor));
     padding: 10px;
 }
 
