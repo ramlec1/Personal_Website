@@ -199,10 +199,11 @@ body{
     }
     .Pic{
         float: none;
+        margin: 0px;
     }
 }
 
-@media (max-width: 00px) {
+@media (max-width: 700px) {
     .Description{
         padding: 5px;
         padding-bottom: 50px;
@@ -214,5 +215,9 @@ body{
 
     .Textbox2{
         padding: 20px;
+    }
+
+    .Pic{
+        margin: 0px;
     }
 }
