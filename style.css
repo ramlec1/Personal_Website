@@ -16,15 +16,28 @@ p ,li{
     font-size: 120%;
 }
 
+header {
+    display: flex; /* Use flexbox */
+
+}
+
 .title{
+    flex: 1;
     text-align: center;
     background-image: linear-gradient(var(--fadecolor) 60%, var(--backgroundcolor));
-    padding-bottom: 0px;
-    position: relative;
     font-size: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 700;
+    font-weight: 100;
     color: #fff;
+    padding-left: 60px;
+}
+
+.language{
+    background-image: linear-gradient(var(--fadecolor) 60%, var(--backgroundcolor));
+}
+
+.language_im{
+    max-width: 30px;
 }
 
 body{
@@ -189,6 +202,7 @@ body{
     opacity: 1; 
 }
 
+
 @media (max-width: 1070px) {
     .ColumnedText {
         column-count: 1; 
@@ -221,3 +235,4 @@ body{
         margin: 0px;
     }
 }
+
